@@ -112,7 +112,16 @@ console.log(resultinverted);
 
 //Scrivi una funzione invertiNumero che prenda un numero come parametro e restituisca il numero con le cifre invertite (es. 123 → 321).
 
+function invertiNumero(numero) {
+  // Converte il numero in stringa, lo divide in caratteri, li inverte e poi li riunisce
+  const numeroInvertito = numero.toString().split('').reverse().join('');
+  // Converte di nuovo in numero e lo restituisce
+  return parseInt(numeroInvertito) * Math.sign(numero);
+}
 
+// Esempi di utilizzo
+console.log(invertiNumero(1234));   // Output: 4321
+console.log(invertiNumero(-567));   // Output: -765
 
 
 
@@ -123,7 +132,11 @@ console.log(resultinverted);
 
 
 
-
+function tabellina(numero) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+}
 
 //26) Fibonacci
 
@@ -132,13 +145,39 @@ console.log(resultinverted);
 
 
 
+function fibonacci(N) {
+  if (N <= 0) return 0;
+  if (N === 1) return 1;
+
+  let a = 0, b = 1, temp;
+
+  for (let i = 2; i <= N; i++) {
+    temp = a + b;
+    a = b;
+    b = temp;
+  }
 
 
 //27)  Conteggio vocali
 
 
 //Scrivi una funzione contaVocali che prenda una stringa come parametro e restituisca il numero di vocali presenti.
+function contaVocali(stringa) {
+  const vocali = 'aeiouAEIOU';
+  let contatore = 0;
 
+  for (let i = 0; i < stringa.length; i++) {
+    if (vocali.includes(stringa[i])) {
+      contatore++;
+    }
+  }
+
+  return contatore;
+}
+
+
+console.log(contaVocali("ciao"));      // ➜ 3
+console.log(contaVocali("Stefania"));  // ➜ 4
 
 
 
@@ -148,11 +187,25 @@ console.log(resultinverted);
 
 //Scrivi una funzione applicaSconto che prenda due numeri come parametri (prezzo e percentuale di sconto) e restituisca il prezzo scontato.
 
+function applicaSconto(prezzo, percentualeSconto) {
+  const sconto = (prezzo * percentualeSconto) / 100;
+  const prezzoFinale = prezzo - sconto;
+  return prezzoFinale;
+}
 
-
+console.log(applicaSconto(100, 20)); // ➜ 80
+console.log(applicaSconto(50, 10));  // ➜ 45
 
 
 //29) Conversione gradi
+function convertiGradi(celsius) {
+  let fahrenheit = (celsius * 9/5) + 32;
+  return fahrenheit;
+}
+//OPPURE
 
 
-//Scrivi una funzione convertiGradi che prenda un numero come parametro (gradi Celsius) e restituisca la conversione in Fahrenheit
+
+console.log(convertiGradi(0));   // Output: 32
+console.log(convertiGradi(25));  // Output: 77
+console.log(convertiGradi(100));
