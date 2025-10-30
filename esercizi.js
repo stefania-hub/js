@@ -440,6 +440,12 @@ console.log(checkPassword('Leonardo!'));
 
 
 // Scrivi una funzione sommaFinoAN(n) che restituisce la somma dei numeri da 1 a n.
+function sommaFinoAN(n) {
+  let (i = 1; i <= N i++){
+    return somma
+  }
+}
+console.log (sommaFinoAN(5))
 
 
 // sommaFinoAN(5) -> 1 + 2 + 3 + 4 + 5 -> 15
@@ -449,6 +455,15 @@ console.log(checkPassword('Leonardo!'));
 
 
 // Scrivi una funzione contaCifre(num) che restituisce il numero di cifre di un numero
+function contaCifre(nbr){
+  let conteggio =0;
+  numero = 0;
+  numero = Math.abs(numero);{
+    return conteggio
+  }
+} // NON PROSEGUO PERCHE' NON CAPISCO IL PROCEDIMENTO
+// PERCHE' CERTE VOLTE DOPO LET I PARAMETRI SI METTONO() ALTRE NO? 
+
 
 
 // contaCifre(5) -> 1
@@ -462,7 +477,13 @@ console.log(checkPassword('Leonardo!'));
 
 // Scrivi una funzione sommaCifre(num) che restituisce la somma delle cifre di un numero
 
-
+function sommaCifre(num){
+  let ( i = 0; i = 
+  )
+}
+//VORREI PROVARE A RISOLVERLA COSI'CON LET/CAPIRE SE TRASFORMARE IN ARRAY MI SEMPLIFICA LA VITA , QUINDI NEL SECONDO PARAMETRO SCRIVO I = STRING.LENGHT I = ++
+//MI RENDO CONTO CHE CI SONO SINTASSI E LORO FUNZIONI CHE NON CONOSCO, DEVO APPRENDERE QUELLE BASE PER PROGREDIRE
+//UN ARRAY E' UNA STRUTTURA CHE PERMETTE DI CONSERVARE PIU' VALORI AL POSTO DEL SIMBOLO FRECCIA POSSO USARE LE QUADRE...
 // sommaCifre(5) -> 5
 
 
@@ -473,7 +494,7 @@ console.log(checkPassword('Leonardo!'));
 
 
 // Scrivi una funzione euroToDollaro(euro) che converte un importo in euro in dollari (1 euro = 1.1 dollari).
-
+function euroToDollaro
 
 // 35) Calcolo area rettangolo
 
