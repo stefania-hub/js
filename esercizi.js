@@ -180,127 +180,127 @@
 // tabellina(3)
 
 
-function tabellinaString(nbr) {
-  let tabellinaStr = '';
-  for (let i = 1; i < 11; i++) {
-    const result = nbr * i;
-    tabellinaStr += result;
-    tabellinaStr += '';
-  }
-  return tabellinaString;
+// function tabellinaString(nbr) {
+//   let tabellinaStr = '';
+//   for (let i = 1; i < 11; i++) {
+//     const result = nbr * i;
+//     tabellinaStr += result;
+//     tabellinaStr += '';
+//   }
+//   return tabellinaString;
 
-}
+// }
 
-for (let i = 1; i < 11; i++) {
-  console.log(tabellinaString(i))
-}
+// for (let i = 1; i < 11; i++) {
+//   console.log(tabellinaString(i))
+// }
 
-// 26) Fibonacci
-
-
-// Scrivi una funzione fibonacci che prenda un numero N come parametro e restituisca l’N-esimo numero della sequenza di Fibonacci.
+// // 26) Fibonacci
 
 
+// // Scrivi una funzione fibonacci che prenda un numero N come parametro e restituisca l’N-esimo numero della sequenza di Fibonacci.
 
-// function fibonacci(N) {
-//   if (N <= 0) return 0;
-//   if (N === 1) return 1;
 
-//   let a = 0, b = 1, temp;
 
-//   for (let i = 2; i <= N; i++) {
-//     temp = a + b;
-//     a = b;
-//     b = temp;
+// // function fibonacci(N) {
+// //   if (N <= 0) return 0;
+// //   if (N === 1) return 1;
+
+// //   let a = 0, b = 1, temp;
+
+// //   for (let i = 2; i <= N; i++) {
+// //     temp = a + b;
+// //     a = b;
+// //     b = temp;
+// //   }
+
+// function fibo(pos) {
+//   const first = 0;
+//   const second = 1;
+
+//   if (pos === 1) {
+//     return first;
+//   } else if (pos === 2) {
+//     return second;
+//   } else if (pos > 2) {
+//     let fib;
+
+
+
+//     for (let i = 3; i <= pos; i++) {
+//       const fib = first + second;
+//       second = fib;
+//     }
+//     return fib;
+//   } else {
+//     console.log("ERRORE")
+
+//   }
+//   console.log(fibo(7));
+// }
+
+
+// function reversenumber(nbr) {
+//   const nbrToString = String(nbr);
+//   let reversed = "";
+
+//   for (let i = nbrToString.length - 1; i >= 0; i--) {
+//     const char = nbrToString[i];
+//     reversed += char;
+//   }
+//   const reverseToNumber = Number(reversed);
+//   return reversedToNumber;
+// }
+// console.log(reverseNumber(12345))
+
+
+
+// //27)  Conteggio vocali
+
+
+// //Scrivi una funzione contaVocali che prenda una stringa come parametro e restituisca il numero di vocali presenti.
+// function contaVocali(stringa) {
+//   const vocali = 'aeiouAEIOU';
+//   let contatore = 0;
+
+//   for (let i = 0; i < stringa.length; i++) {
+//     if (vocali.includes(stringa[i])) {
+//       contatore++;
+//     }
 //   }
 
-function fibo(pos) {
-  const first = 0;
-  const second = 1;
-
-  if (pos === 1) {
-    return first;
-  } else if (pos === 2) {
-    return second;
-  } else if (pos > 2) {
-    let fib;
+//   return contatore;
+// }
 
 
-
-    for (let i = 3; i <= pos; i++) {
-      const fib = first + second;
-      second = fib;
-    }
-    return fib;
-  } else {
-    console.log("ERRORE")
-
-  }
-  console.log(fibo(7));
-}
-
-
-function reversenumber(nbr) {
-  const nbrToString = String(nbr);
-  let reversed = "";
-
-  for (let i = nbrToString.length - 1; i >= 0; i--) {
-    const char = nbrToString[i];
-    reversed += char;
-  }
-  const reverseToNumber = Number(reversed);
-  return reversedToNumber;
-}
-console.log(reverseNumber(12345))
-
-
-
-//27)  Conteggio vocali
-
-
-//Scrivi una funzione contaVocali che prenda una stringa come parametro e restituisca il numero di vocali presenti.
-function contaVocali(stringa) {
-  const vocali = 'aeiouAEIOU';
-  let contatore = 0;
-
-  for (let i = 0; i < stringa.length; i++) {
-    if (vocali.includes(stringa[i])) {
-      contatore++;
-    }
-  }
-
-  return contatore;
-}
-
-
-console.log(contaVocali("ciao"));      // ➜ 3
-console.log(contaVocali("Stefania"));  // ➜ 4
+// console.log(contaVocali("ciao"));      // ➜ 3
+// console.log(contaVocali("Stefania"));  // ➜ 4
 
 
 
 
-function countBs(str) {
-  let counter = 0;
+// function countBs(str) {
+//   let counter = 0;
 
-  for (let i = 0; i < str.length; i++) {
-    const selectedChar = str[i];
-    const lowerChar = selectedChar.toLowerCase()
-    if (lowerChar === "a"
-      || lowerChar === 'e'
-      || lowerChar === 'i'
-      || lowerChar === 'o'
-      || lowerChar === 'u') {
-      counter++
-    }
-
-
-  }
+//   for (let i = 0; i < str.length; i++) {
+//     const selectedChar = str[i];
+//     const lowerChar = selectedChar.toLowerCase()
+//     if (lowerChar === "a"
+//       || lowerChar === 'e'
+//       || lowerChar === 'i'
+//       || lowerChar === 'o'
+//       || lowerChar === 'u') {
+//       counter++
+//     }
 
 
+//   }
 
-  return counter
-}
-console.log(countVowels('aiuola'))
+
+
+//   return counter
+// }
+// console.log(countVowels('aiuola'))
 
 
 
@@ -310,41 +310,41 @@ console.log(countVowels('aiuola'))
 
 
 
-//28) Sconto
+// //28) Sconto
 
 
-//Scrivi una funzione applicaSconto che prenda due numeri come parametri (prezzo e percentuale di sconto) e restituisca il prezzo scontato.
+// //Scrivi una funzione applicaSconto che prenda due numeri come parametri (prezzo e percentuale di sconto) e restituisca il prezzo scontato.
 
-function applicaSconto(prezzo, percentualeSconto) {
-  const sconto = (prezzo * percentualeSconto) / 100;
-  const prezzoFinale = prezzo - sconto;
-  return prezzoFinale;
-}
+// function applicaSconto(prezzo, percentualeSconto) {
+//   const sconto = (prezzo * percentualeSconto) / 100;
+//   const prezzoFinale = prezzo - sconto;
+//   return prezzoFinale;
+// }
 
-console.log(applicaSconto(100, 20)); // ➜ 80
-console.log(applicaSconto(50, 10));  // ➜ 45
-
-
-//29) Conversione gradi
-function convertiGradi(celsius) {
-  let fahrenheit = (celsius * 9 / 5) + 32;
-  return fahrenheit;
-}
+// console.log(applicaSconto(100, 20)); // ➜ 80
+// console.log(applicaSconto(50, 10));  // ➜ 45
 
 
-
-
-console.log(convertiGradi(0));   // Output: 32
-console.log(convertiGradi(25));  // Output: 77
-console.log(convertiGradi(100));
+// //29) Conversione gradi
+// function convertiGradi(celsius) {
+//   let fahrenheit = (celsius * 9 / 5) + 32;
+//   return fahrenheit;
+// }
 
 
 
-//VERIFICA PASSWORD che abbia almeno una lettera maiuscola un carattere speciale
 
-if (isToShort(password)){
+// console.log(convertiGradi(0));   // Output: 32
+// console.log(convertiGradi(25));  // Output: 77
+// console.log(convertiGradi(100));
 
-}
+
+
+// //VERIFICA PASSWORD che abbia almeno una lettera maiuscola un carattere speciale
+
+// if (isToShort(password)){
+
+// }
 
 
 
@@ -435,7 +435,7 @@ function checkPassword(password) {
 console.log(checkPassword('caccacaccacacca'));
 console.log(checkPassword('Leonardo!'));
 
-/ 31) Somma dei numeri fino a n
+// 31) Somma dei numeri fino a n
 
 
 
@@ -478,8 +478,7 @@ function contaCifre(nbr){
 // Scrivi una funzione sommaCifre(num) che restituisce la somma delle cifre di un numero
 
 function sommaCifre(num){
-  let ( i = 0; i = 
-  )
+  let ( i = 0; i = )
 }
 //VORREI PROVARE A RISOLVERLA COSI'CON LET/CAPIRE SE TRASFORMARE IN ARRAY MI SEMPLIFICA LA VITA , QUINDI NEL SECONDO PARAMETRO SCRIVO I = STRING.LENGHT I = ++
 //MI RENDO CONTO CHE CI SONO SINTASSI E LORO FUNZIONI CHE NON CONOSCO, DEVO APPRENDERE QUELLE BASE PER PROGREDIRE
@@ -493,11 +492,22 @@ function sommaCifre(num){
 // 34) Conversione valuta
 
 
-// Scrivi una funzione euroToDollaro(euro) che converte un importo in euro in dollari (1 euro = 1.1 dollari).
-function euroToDollaro
+// 
+
+
+function euroToDollaro(euro) {
+  let dollari = euro * 1.1;
+  return dollari;
+}
+console.log (euro50)//PERCHE' 50?
 
 // 35) Calcolo area rettangolo
-
+function areaRettangolo (b h){
+  let base * altezza 
+    return area
+  
+}
+console.log (area rettangolo 5, 10)
 
 // Scrivi una funzione areaRettangolo(base, altezza) che restituisce l’area di un rettangolo.
 
@@ -506,18 +516,45 @@ function euroToDollaro
 
 
 // Scrivi una funzione media(a, b, c) che restituisce la media di tre numeri.
+function media (media a b c){
+  let risultato (a+ b + c) / 3;
+  return risultato;
+
+
+}
+console.log (media (5)10,15,)
 
 
 // 37) Generatore di password casuale
 
 
 // Scrivi una funzione generaPasswordCasuale() che restituisce una password di 8 caratteri usando solo lettere maiuscole e numeri (usa Math.random())
+function generaPasswordCasuale (){
+  let(caratteri) ABCDEFGHIJKLMNOPQRSTUVWZ0123456789:
+  let password = '';
 
+
+  //QUI MI PERDO
+}
 
 // 38) Potenza con ciclo
 
 
 // Scrivi una funzione potenzaCiclo(base, esponente) che calcola la potenza usando un ciclo.
+
+
+function potenzaCiclo (base, esponente)
+if (esponente = 0) return ;
+//MI PERDO
+
+
+
+
+const potenzaCiclo = (base, esponente) => base ** esponente;
+
+
+
+
 
 
 // 39) Scrivi un validatore di email con queste regole:
