@@ -570,13 +570,23 @@ const potenzaCiclo = (base, esponente) => base ** esponente;
 
 
 // -il punto non può essere l'ultimo carattere
-
+function validatore(email)
+if email(!includes (@)) return false{
+    else if (!includes ???? (.@))
+}
+//SU CHAT GPT AL POSTO DEL SECONDO ELSE IF SI USA CONST...MA SE VOLESSI USARE UN ALTRO IF?
 
 // 40) crea un converitore tra italiano e farfallino(https://it.wikipedia.org/wiki/Alfabeto_farfallino)
 
 
-
-
+function translateItalianoFarfallino (testo) {
+    return testo .replace /([aeiouAEIOU]/g, (v))//MI PERDO QUI
+}
+function translateFarfallinoItaliano (testo) {
+    return testo .replace
+}
+console,log (ciao)
+console.log ()
 
 
 
