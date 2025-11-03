@@ -355,115 +355,51 @@
 // - Contiene almeno un carattere speciale tra questi '!#@$%'
 // - Non contiene la parola 'cacca'
 
-function hasSpecialCharacters(str){
-    if (password.includes("!")
-        || password.includes('#')
-        || password.includes('@')
-        || password.includes('$')
-        || password.includes('%')) {
-        return true;
-    } else {
-        return false;
-    }
-}
+function sommaFinoAN(nbr){
 
-function containsUppercaseChar(str){
-    if (str.toLowerCase() === str) {
-        return false;
-    } else {
-        return true;
-    }
-}
 
-function isTooShort(str){
-    if(str.length < 8){
-        return true;
-    } else {
-        return false;
-    }
-}
 
-function containsCacca(str){
-    if(str.includes('cacca')){
-        return true;
-    } else {
-        return false;
-    }
-}
 
-function checkPassword(password) {
-    // if(password.length < 8){
-    //     return false;
-    // } else {
-    //     if(password.toLowerCase() === password){
-    //         return false;
-    //     } else {
-    //         if (password.includes("!")
-    //         || password.includes('#')
-    //         || password.includes('@')
-    //         || password.includes('$')
-    //         || password.includes('%')) {
-    //             if (password.includes('cacca')) {
-    //                 return false;
-    //             } else {
-    //                 return true;
-    //             }
-    //         } else {
-    //             return false;
-    //         }
-    //     }
-    // }
 
-    
-    if (isTooShort(password)) {
-        return false;
-    } else if (!containsUppercaseChar(password)){
-        return false;
-    } else if (!hasSpecialCharacters(password)){
-        return false;
-    } else if (containsCacca(password)) {
-        return false;
-    } else {
-        return true;
+
+    let sum = 0
+
+
+
+
+
+    for (let i = 1; i <= nbr; i++) {
+
+
+        sum = sum + i;
+
+
     }
 
- 
+
+
+
+
+    return sum;
+
 
 }
 
 
-console.log(checkPassword('caccacaccacacca'));
-console.log(checkPassword('Leonardo!'));
-
-// 31) Somma dei numeri fino a n
 
 
 
-// Scrivi una funzione sommaFinoAN(n) che restituisce la somma dei numeri da 1 a n.
-function sommaFinoAN(n) {
-  let (i = 1; i <= N i++){
-    return somma
-  }
-}
-console.log (sommaFinoAN(5))
+console.log(sommaFinoAN(5))
 
 
-// sommaFinoAN(5) -> 1 + 2 + 3 + 4 + 5 -> 15
+console.log(sommaFinoAN(50))
+
+
 
 
 // 32) Conteggio cifre
 
-
 // Scrivi una funzione contaCifre(num) che restituisce il numero di cifre di un numero
-function contaCifre(nbr){
-  let conteggio =0;
-  numero = 0;
-  numero = Math.abs(numero);{
-    return conteggio
-  }
-} // NON PROSEGUO PERCHE' NON CAPISCO IL PROCEDIMENTO
-// PERCHE' CERTE VOLTE DOPO LET I PARAMETRI SI METTONO() ALTRE NO? 
-
 
 
 // contaCifre(5) -> 1
@@ -472,121 +408,728 @@ function contaCifre(nbr){
 // contaCifre(1245) -> 4
 
 
-// 33) Somma delle cifre
 
+
+
+
+
+
+function contaCifre(nbr){
+
+
+
+
+
+    let nbrToString = String(nbr);
+
+
+           // '1245'
+
+
+    let length = nbrToString.length;
+
+
+           // 4
+
+
+    return length;
+
+
+}
+
+
+
+
+
+console.log(contaCifre(5))// -> 1
+
+
+console.log(contaCifre(1245))// -> 4
+
+
+
+
+
+
+
+// 33) Somma delle cifre
 
 // Scrivi una funzione sommaCifre(num) che restituisce la somma delle cifre di un numero
 
-function sommaCifre(num){
-  let ( i = 0; i = )
-}
-//VORREI PROVARE A RISOLVERLA COSI'CON LET/CAPIRE SE TRASFORMARE IN ARRAY MI SEMPLIFICA LA VITA , QUINDI NEL SECONDO PARAMETRO SCRIVO I = STRING.LENGHT I = ++
-//MI RENDO CONTO CHE CI SONO SINTASSI E LORO FUNZIONI CHE NON CONOSCO, DEVO APPRENDERE QUELLE BASE PER PROGREDIRE
-//UN ARRAY E' UNA STRUTTURA CHE PERMETTE DI CONSERVARE PIU' VALORI AL POSTO DEL SIMBOLO FRECCIA POSSO USARE LE QUADRE...
 // sommaCifre(5) -> 5
 
-
 // sommaCifre(1245) -> 12
+
+
+
+
+
+function sommaCifre(nbr){
+
+
+                  //1245
+
+
+    //debugger;
+
+
+
+
+
+    let nbrToString = String(nbr);
+
+
+        //'1245'
+
+
+        
+
+
+    let sum = 0
+
+
+
+
+
+    for (let i = 0; i < nbrToString.length; i++) {
+
+
+                            //4
+
+
+
+
+
+        const nChar = nbrToString[i];
+
+
+            //'5'                //3
+
+
+
+
+
+        const n = Number(nChar);
+
+
+            //5
+
+
+
+
+
+        sum = sum + n;
+
+
+        //12   //7 //5
+
+
+    }
+
+
+
+
+
+    return sum;
+
+
+          //12
+
+
+}
+
+
+
+
+
+console.log(sommaCifre(1245));
+
+
 
 
 // 34) Conversione valuta
 
 
-// 
+// Scrivi una funzione euroToDollaro(euro) che converte un importo in euro in dollari (1 euro = 1.1 dollari).
+
+
+// Scrivi una funzione euroToDollaro(euro) che converte un importo in euro in dollari (1 euro = 1.15 dollari).
+
+
+
 
 
 function euroToDollaro(euro) {
-  let dollari = euro * 1.1;
-  return dollari;
+
+
+
+
+
+    const dollaro = euro * 1.15;
+
+
+
+
+
+    return dollaro;
+
+
 }
-console.log (euro50)//PERCHE' 50?
+
+
+
+
+
+console.log(euroToDollaro(5));
+
+
+
+
+
+
 
 // 35) Calcolo area rettangolo
-function areaRettangolo (b h){
-  let base * altezza 
-    return area
-  
-}
-console.log (area rettangolo 5, 10)
 
 // Scrivi una funzione areaRettangolo(base, altezza) che restituisce l’area di un rettangolo.
 
 
-// 36) Calcolo media
 
 
-// Scrivi una funzione media(a, b, c) che restituisce la media di tre numeri.
-function media (media a b c){
-  let risultato (a+ b + c) / 3;
-  return risultato;
+
+function areaRettangolo(base, altezza){
+
+
+
+
+
+    const area = base * altezza;
+
+
+
+
+
+    return area;
+
+
+
 
 
 }
-console.log (media (5)10,15,)
+
+
+
+
+
+console.log(areaRettangolo(5, 20));
+
+
+
+
+// 36) Calcolo media
+
+// Scrivi una funzione media(a, b, c) che restituisce la media di tre numeri.
+
+
+
+
+
+function media(a, b, c){
+
+
+
+
+
+    const sum = a + b + c;
+
+
+
+
+
+    const mean = sum / 3;
+
+
+
+
+
+    return mean;
+
+
+}
+
+
+
+
+
+console.log(media(5, 20, 11));
+
+
 
 
 // 37) Generatore di password casuale
 
-
 // Scrivi una funzione generaPasswordCasuale() che restituisce una password di 8 caratteri usando solo lettere maiuscole e numeri (usa Math.random())
-function generaPasswordCasuale (){
-  let(caratteri) ABCDEFGHIJKLMNOPQRSTUVWZ0123456789:
-  let password = '';
 
 
-  //QUI MI PERDO
+
+
+
+function generaPasswordCasuale() {
+
+
+
+
+
+    const availableCharacters = 'ABCDEFGHIJKLMNOPQRSTUVXYZ0123456789';
+
+
+                               //012345678..
+
+
+    let password = '';
+
+
+    
+
+
+    for (let i = 0; i < 8; i++) {
+
+
+
+
+
+        const numeroRandomico = Math.random();
+
+
+
+
+
+        const position = numeroRandomico * (availableCharacters.length - 1);
+
+
+
+
+
+        const roundedPosition = Math.round(position);
+
+
+
+
+
+        password = password + availableCharacters[roundedPosition];
+
+
+        
+
+
+    }
+
+
+
+
+
+    return password;
+
+
 }
 
-// 38) Potenza con ciclo
 
+
+
+
+console.log(generaPasswordCasuale())
+
+
+
+
+// 38) Potenza con ciclo
 
 // Scrivi una funzione potenzaCiclo(base, esponente) che calcola la potenza usando un ciclo.
 
 
-function potenzaCiclo (base, esponente)
-if (esponente = 0) return ;
-//MI PERDO
+function potenzaCiclo(base, esponente) {
 
 
 
 
-const potenzaCiclo = (base, esponente) => base ** esponente;
+
+    if (esponente === 0) {
 
 
+        return 1;
+
+
+    }
+
+
+
+
+
+    // let pow = 1;
+
+
+
+
+
+    // for (let i = 0; i < esponente; i++) {
+
+
+
+
+
+    //     pow = pow * base;
+
+
+
+
+
+    // }
+
+
+    
+
+
+    // return pow;
+
+
+
+
+
+    let pow = base;
+
+
+
+
+
+    for (let i = 1; i < esponente; i++) {
+
+
+
+
+
+        pow = pow * base;
+
+
+
+
+
+    }
+
+
+    
+
+
+    return pow;
+
+
+}
+
+
+
+
+
+console.log(potenzaCiclo(2, 5))
 
 
 
 
 // 39) Scrivi un validatore di email con queste regole:
 
-
 // -deve contenere una @
-
 
 // -deve contenere un punto posizionato dopo la @
 
-
 // -le parti di testo prima della @ e tra la @ e il punto devono almeno avere tre lettere
 
-
 // -il punto non può essere l'ultimo carattere
-function validatore(email)
-if email(!includes (@)) return false{
-    else if (!includes ???? (.@))
-}
-//SU CHAT GPT AL POSTO DEL SECONDO ELSE IF SI USA CONST...MA SE VOLESSI USARE UN ALTRO IF?
+
 
 // 40) crea un converitore tra italiano e farfallino(https://it.wikipedia.org/wiki/Alfabeto_farfallino)
 
 
-function translateItalianoFarfallino (testo) {
-    return testo .replace /([aeiouAEIOU]/g, (v))//MI PERDO QUI
+
+
+
+function constainsAt(email) {
+
+
+    if(email.includes('@')){
+
+
+        return true;
+
+
+    } else {
+
+
+        return false;
+
+
+    }
+
+
 }
-function translateFarfallinoItaliano (testo) {
-    return testo .replace
+
+
+
+
+
+function containsDotAfterAt(email) {
+
+
+    const dotPosition = email.indexOf('.');
+
+
+    if (dotPosition === -1) {
+
+
+        return false;
+
+
+    }
+
+
+    const atPosition = email.indexOf('@');
+
+
+    if (dotPosition > atPosition) {
+
+
+        return true;
+
+
+    } else {
+
+
+        return false;
+
+
+    }
+
+
 }
-console,log (ciao)
-console.log ()
+
+
+
+
+
+function firstAndSecondPartlengthIsThreeOrMore(email) {
+
+
+
+
+
+    const atPosition = email.indexOf('@');
+
+
+    const firstPart = email.substring(0, atPosition);
+
+
+
+
+
+    const dotPosition = email.indexOf('.');
+
+
+    const secondPart = email.substring(atPosition + 1, dotPosition);
+
+
+
+
+
+    if (firstPart.length >= 3 && secondPart.length >=3) {
+
+
+        return true;
+
+
+    } else {
+
+
+        return false;
+
+
+    }
+
+
+}
+
+
+
+
+
+function lastCharMustBeDifferentFromDot(email) {
+
+
+    const lastPosition = email.length - 1;
+
+
+    const lastChar = email[lastPosition];
+
+
+
+
+
+    if (lastChar === '.') {
+
+
+        return false;
+
+
+    } else {
+
+
+        return true;
+
+
+    }
+
+
+}
+
+
+
+
+
+function emailValidator(email) {
+
+
+    if (!constainsAt(email)) {
+
+
+        return false
+
+
+    } else if (!containsDotAfterAt(email)){
+
+
+        return false
+
+
+    } else if (!firstAndSecondPartlengthIsThreeOrMore(email)){
+
+
+        return false
+
+
+    } else if (!lastCharMustBeDifferentFromDot(email)){
+
+
+        return false
+
+
+    } else {
+
+
+        return true;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+console.log(emailValidator('ciaociao'))
+
+
+console.log(emailValidator('ciao@ciao'))
+
+
+console.log(emailValidator('ci.ao@ciao'))
+
+
+console.log(emailValidator('ciao@ciao.'))
+
+
+console.log(emailValidator('ciao@cia.o'))
+
+
+
+
+
+
+
+
+// 40) crea un converitore tra italiano e farfallino(https://it.wikipedia.org/wiki/Alfabeto_farfallino)
+
+
+
+
+
+function farfallinoTranslator(str) {
+
+
+    
+
+
+    const vowels = 'aeiou';
+
+
+
+
+
+    let farfallinoStr = '';
+
+
+
+
+
+    for (let i = 0; i < str.length; i++) {
+
+
+
+
+
+        const char = str[i]
+
+
+
+
+
+        if (vowels.includes(char.toLowerCase())) {
+
+
+            farfallinoStr = farfallinoStr + char + 'f' + char;
+
+
+        } else {
+
+
+            farfallinoStr = farfallinoStr + char;
+
+
+        }
+
+
+    }
+
+
+    return farfallinoStr;
+
+
+}
+
+
+
+
+
+console.log(farfallinoTranslator('leonardo'))
+
+
+console.log(farfallinoTranslator('LEONARDO'))
+
+
+console.log(farfallinoTranslator('viva la pausa!!'))
+
 
 
 
