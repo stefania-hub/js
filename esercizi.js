@@ -1168,6 +1168,381 @@ console.log(farfallinoTranslator('viva la pausa!!'))
 
 // 50) trova lunghezze
 // Scrivi una funzione trovaLunghezzeParola(array) che restituisce un array delle lunghezze(numeri) delle stringhe che compongono l'array in input
+ 44) Inverti Array con un ciclo-----------------------------------//
+
+
+// Scrivi una funzione invertiArray(array) che restituisce un nuovo array con gli elementi in ordine inverso.
+
+
+
+// function invertiArray(nbrArray) {
+
+@@ -1266,7 +1266,7 @@ let numbers2 = [20, 10, 22, 44, 35, 0, -1, 1.5, 100, 20, 10, 20];
+
+// console.log(invertiArray(numbers2));
+
+
+
+
+
+
+// 45) Maiuscolo Tutte le Parole
+
+
+//--------------- 45) Maiuscolo Tutte le Parole--------------------------------//
+
+// Scrivi una funzione maiuscoloTutto(array) che restituisce un nuovo array con tutte le stringhe in maiuscolo.
+
+
+
+// let strings = ['pippo','pluto', 'topolino', 'leonardo'];
+
+@@ -1281,41 +1281,99 @@ let numbers2 = [20, 10, 22, 44, 35, 0, -1, 1.5, 100, 20, 10, 20];
+
+// }
+
+// console.log(maiuscoloTutto(strings));
+
+
+
+
+// 46) Somma Righe Matrice
+
+
+//---------------- 46) Somma Righe Matrice--------------------------------//
+
+// Scrivi una funzione sommaRighe(matrice) che restituisce un array con la somma degli elementi di ogni riga.
+
+
+const superArray = [[1, 2, 3], 
+
+
+                    [1, 1, 1], 
+
+
+                    [3, 2, 1]];
+
+
+function sommaRighe(nbrArray) {
+
+
+    let sumRow = [];
+
+
+    for (let rowNumber = 0; rowNumber < nbrArray.length; rowNumber++) {
+
+
+        const row = nbrArray[rowNumber];
+
+
+       for (let columnNumber = 0; columnNumber < row.length; columnNumber++) {
+
+
+            const sumRowNum =+ columnNumber;
+
+
+            sumRow.push(sumRowNum);
+
+
+        }
+
+
+    } return sumRow;
+
+
+}
+
+
+
+
+
+console.log(sommaRighe(superArray));
+
+
+
+
+
+
+
+
+// 47) Conta Occorrenze
+
+
+// Scrivi una funzione contaOccorrenze(array, elemento) che conta quante volte un elemento appare in un array
+
+
+
+
+// const superArray = [[1, 2, 3], 
+
+
+//                     [1, 1, 1], 
+
+
+//                     [3, 2, 1]];
+
+
+// function sommaRighe(nbrArray) {
+
+
+//     let sumRow = [];
+
+
+//     for (let rowNumber = 0; rowNumber < nbrArray.length; rowNumber++) {
+
+
+//         const row = nbrArray[rowNumber];
+
+
+//         let sum = 0;
+
+
+//         for (let colNumber = 0; colNumber < row.length; colNumber++) {
+
+
+//             const element = row[colNumber];
+
+
+//             sum += element;            
+
+
+//         }        sumRow.push(sum);
+
+
+//     }
+
+
+//     return sumRow;
+
+
+// }
+
+
+// console.log(sommaRighe(superArray));
+
+
+//-------------------CON FOROF---------------------------//
+
+
+// function sommaRighe(nbrArray) {
+
+
+//     let sumRow = [];
+
+
+//     for (const row of nbrArray) { 
+
+
+//         let sum = 0;
+
+
+//         for (const column of row) { 
+
+
+//             sum += column;
+
+
+//         }
+
+
+//         sumRow.push(sum);
+
+
+//     }
+
+
+//     return sumRow;
+
+
+// }
+
+
+// console.log(sommaRighe(superArray));
+
+
+
+
+//----------------- 47) Conta Occorrenze -------------------------------//
+
+
+
+
+// 48) Filtra indice pari
+
+
+// Scrivi una funzione contaOccorrenze(array, elemento) che conta quante volte un elemento appare in un array
+
+
+// function contaOccorrenze(nbrArray, elemento) {
+
+
+//     let counter = 0;
+
+
+//     for (let i = 0; i < nbrArray.length; i++) {
+
+
+//         const currentElement = nbrArray[i];
+
+
+//         if (currentElement === elemento) {
+
+
+//             counter++;
+
+
+//         }
+
+
+//     }
+
+
+//     return counter; 
+
+
+// }
+
+
+// console.log(contaOccorrenze(numbers2, 20)); //-> 3
+
+
+
+
+
+
+
+
+//----------------- 48) Filtra indice pari -------------------------------//
+
+// Scrivi una funzione filtraIndicePari(array) che tiene tutti gli elementi in posizione dispari
+
+
+
+
+// function filtraIndicePari(nbrArray) {
+
+
+//     let newArray = [];
+
+
+//     for (let i = 0; i < nbrArray.length; i++) {
+
+
+//         const element = nbrArray[i];
+
+
+//         if (i % 2 !== 0) {
+
+
+//             newArray.push(element);
+
+
+//         }
+
+
+//     }
+
+
+//     return newArray;
+
+
+// }
+
+
+
+
+// console.log(filtraIndicePari(numbers2)); //-> [10, 44, 0, 1.5, 20];
+
+
+
+
+// 49) Somma pari 
+
+
+//----------------- 49) Somma pari --------------------------------------//
+
+// Scrivi una funzione sommaPari(array) che somma tutti i numeri pari
+
+
+
+
+// function sommaPari(nbrArray) {
+
+
+//     let sum = 0;
+
+
+//     for (const element of nbrArray) {
+
+
+//         if (element % 2 === 0) {
+
+
+//             sum += element;
+
+
+//         }
+
+
+//     }
+
+
+//     return sum;
+
+
+// }
+
+
+// console.log(sommaPari(numbers2)); //-> 246
+
+
+
+
+
+
+
+// 50) trova lunghezze
+
+
+//----------------- 50) trova lunghezze -------------------------------//
+
+// Scrivi una funzione trovaLunghezzeParola(array) che restituisce un array delle lunghezze(numeri) delle stringhe che compongono l'array in input
+
+
+
+
+// let strings2 = ['pippo','pluto', 'topolino', 'leonardo'];
+
+
+
+
+
+// function trovaLunghezzeParola(strArray) {
+
+
+//     let lengthsArray = []; 
+
+
+//     for (const element of strArray) {
+
+
+//         const length = element.length;
+
+
+//         lengthsArray.push(length);
+
+
+//     }
+
+
+//     return lengthsArray;
+
+
+// }  
+
+
+// console.log(trovaLunghezzeParola(strings2)); //-> [5,5,8,8]
+
 
 
 
