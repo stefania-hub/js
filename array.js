@@ -248,3 +248,6 @@ function findMax(nbrArray){
 }
 console.log(findMax(numbers))
 
+
+
+
